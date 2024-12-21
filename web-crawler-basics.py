@@ -16,7 +16,7 @@ html = response.text
 # 使用BeautifulSoup()读取html，添加lxml解析器，赋值给soup
 soup = BeautifulSoup(html, "lxml")
 
-# 使用find_all()查询soup中h2节点，赋值给content_all
+# 使用find_all()查询soup中h2节点，赋值给content_all, find_all()功能会返回一个list
 content_all = soup.find_all(name="h2")
 
 # for循环遍历content_all
