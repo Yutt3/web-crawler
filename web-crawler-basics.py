@@ -22,13 +22,13 @@ content_all = soup.find_all(name="h2")
 # for循环遍历content_all
 for content in content_all:
 
-    # TODO 使用.string获取节点的内容，赋值给contentString
-    contentString = content.string
+    # TODO 使用.string获取节点的内容，赋值给contentString. .string只能打印单<>节点内的东西，如果有多个节点嵌套，则会打印None.
+    contentString = content.string 
     
     # TODO 使用print输出contentString
     print(contentString)
 
-    # TODO 使用.text获取节点的内容，赋值给contentString
+    # TODO 使用.text获取节点的内容，赋值给contentString. .text会打印<>节点内的纯文本内容。 
     contentString = content.text
     
     # TODO 使用print输出contentString
