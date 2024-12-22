@@ -1,6 +1,6 @@
 # These installations are mandatory:
 
 
-pip install requests
-pip install bs4
-pip install lxml
+pip install requests<br/>
+pip install bs4<br/>
+pip install lxml<br/>
